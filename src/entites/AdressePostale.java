@@ -8,12 +8,12 @@ public class AdressePostale {
 		public int codePostal;
 		public String ville;
 		
-		public AdressePostale (int consNumeroRue, String consLibelleRue, int consCodePostal, String consVille)
+		public AdressePostale (int numeroRue, String libelleRue, int codePostal, String ville)
 		{
-				numeroRue = consNumeroRue;
-				libelleRue = consLibelleRue;
-				codePostal = consCodePostal;
-				ville = consVille;
+				this.numeroRue = numeroRue;
+				this.libelleRue = libelleRue;
+				this.codePostal = codePostal;
+				this.ville = ville;
 		}
 
 		
