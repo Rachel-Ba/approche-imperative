@@ -27,12 +27,19 @@ public class Compte {
 	
 	//////////////////////////////////
 	
+	
 	public Compte(int numeroCompte, int soldeCompte) {
 		super();
 		NumeroCompte = numeroCompte;
 		SoldeCompte = soldeCompte;
 	}
 	
+	
+	public String toString() {
+		return NumeroCompte + " " + SoldeCompte;
+	}
+	
+
 	
 	
 	
