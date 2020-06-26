@@ -17,17 +17,20 @@ public class TestPersonne {
 		Personne p2 = new Personne("Clark","Eli",ap2);
 
 		/////////////////////////////////////////////////////////////////////
+		String a = p1.affichageString();
 		
-		p1.affichage();
-		p2.affichage();
+		p2.affichage();		
+		
+		////////////////////////////////////////////
 		
 		p1.modifiNom("canard");
 		p1.modifiPrenom("coincoin");
-//		p1.modifiAdresse("tu fais le canard");
 		System.out.println(p1.nom);
 		
 		String nomTest = p1.retourNom("patate");
 		System.out.print(nomTest);
+		
+		//////////////////////////////////////////////////
 		
 	}
 

@@ -15,27 +15,32 @@ public class Personne {
 	
 		}
 		
-		//Dans la classe Personne, ajoutez une méthode qui permet d’afficher le nom et le
-		//prénom avec le nom de famille en majuscules.
+		//si void, pas de return, si String, return
 		
 		public void affichage()
 		{
 			System.out.println(nom.toUpperCase() + " " + prenom.toUpperCase());
 		}
 		
+		public String affichageString()
+		{
+			return nom.toUpperCase() + " " + prenom.toUpperCase();
+		}
+		
+		////////////////////////////////////////////////////////////////////
 		public void modifiNom(String modifnom)
 		{
-			nom = modifnom;
+			this.nom = modifnom;
 		}
 		
 		public void modifiPrenom(String modifPrenom)
 		{
-			prenom = modifPrenom;
+			this.prenom = modifPrenom;
 		}
 
 		public void modifiAdresse(AdressePostale modifAdresse)
 		{
-			adresse = modifAdresse;
+			this.adresse = modifAdresse;
 		}
 		
 		public String retourNom(String renom)
