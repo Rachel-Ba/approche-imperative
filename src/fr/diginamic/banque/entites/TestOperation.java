@@ -12,11 +12,11 @@ public class TestOperation {
 		tab[2] = new Credit ("26/06/2020", 50);
 		tab[3] = new Debit ("26/06/2020", 35);
 		
-		for(int i=0; i<tab.length; i++)
+/*		for(int i=0; i<tab.length; i++)
 		{
 			System.out.println(tab[i]);
 			
-			if (tab[i].getType().equals("CREDIT"))
+			if (tab[i].GetType().equals("CREDIT"))
 			{
 				solde += tab[i].getMontantOp();
 			}
@@ -25,7 +25,7 @@ public class TestOperation {
 				solde -= tab[i].getMontantOp();
 			}
 			
-		}
+		}*/
 		
 		
 
