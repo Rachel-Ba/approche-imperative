@@ -58,6 +58,13 @@ public class Personne {
 			return reAdresse;
 		}
 
+		@Override
+		public String toString() {
+			return "Personne [nom=" + nom + ", prenom=" + prenom + ", adresse=" + adresse + "]";
+		}
+		
+		
+
 		
 
 		
