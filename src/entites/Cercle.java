@@ -29,7 +29,7 @@ public class Cercle {
 		
 	@Override
 	public String toString() {
-		return "Cercle [Perimetre=" + this.rayon*2 + ", Surface = " + (this.rayon*3.14*this.rayon) + "]";
+		return "Cercle [Perimetre=" + this.rayon*2 + ", Surface = " + (this.rayon*Math.PI*this.rayon) + "]";
 	
 	}
 
