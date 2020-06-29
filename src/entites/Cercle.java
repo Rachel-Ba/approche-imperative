@@ -27,7 +27,9 @@ public class Cercle {
 
 	@Override
 	public String toString() {
-		return "Cercle [rayon=" + rayon + ", perimetre()=" + perimetre() + ", surface()=" + surface() + "]";
+		return "Cercle [rayon=" + rayon + 
+				", perimetre()=" + perimetre() + 
+				", surface()=" + surface() + "]";
 	}
 
 

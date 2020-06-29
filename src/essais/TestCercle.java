@@ -7,9 +7,10 @@ public class TestCercle {
 		// TODO Auto-generated method stub
 		
 		Cercle c1 = new Cercle(4.3);
-		Cercle c2 = new Cercle(4.3);
+		Cercle c2 = new Cercle(6.6);
 		
 		System.out.println(c1);
+		System.out.println(c2);
 
 	}
 
