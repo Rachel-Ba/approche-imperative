@@ -2,35 +2,37 @@ package entites;
 
 public class Cercle {
 	
-	/////// Attribut d'instance //////
+	////////// Attribut //////////////////
 	
 	private double rayon;
 	
-	
-	public double getRayon() {
-		return rayon;
-	}
-
-	public void setRayon(double rayon) {
-		this.rayon = rayon;
-
-	}
-	
-	////// Constructeur //////////////
+	////////// Constructeur //////////////	
 
 	public Cercle(double rayon) 
 	{
 		super();
 		this.rayon = rayon;
 	}
+	
+	///////// Methode ////////////////////
+	
+	public double perimetre()
+	{
+		return rayon*2*Math.PI;
+	}
+	public double surface()
+	{
+		return rayon*rayon*Math.PI;
+	}
 
-
-	////// Methode ///////////////////
-		
 	@Override
 	public String toString() {
-		return "Cercle [Perimetre=" + this.rayon*2 + ", Surface = " + (this.rayon*Math.PI*this.rayon) + "]";
-	
+		return "Cercle [rayon=" + rayon + ", perimetre()=" + perimetre() + ", surface()=" + surface() + "]";
 	}
+
+
+
+
+	
 
 }
