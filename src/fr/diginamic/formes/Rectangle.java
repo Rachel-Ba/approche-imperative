@@ -1,6 +1,6 @@
 package fr.diginamic.formes;
 
-public abstract class Rectangle extends Forme {
+public class Rectangle extends Forme {
 	private double longueur;
 	private double largeur;
 	
@@ -9,5 +9,22 @@ public abstract class Rectangle extends Forme {
 		this.longueur = longueur;
 		this.largeur = largeur;
 	}
+	
+	public double calculerPerimetre()
+	{
+		return (longueur+largeur)*2;
+	}
+	public double calculerSurface()
+	{
+		return longueur*largeur;
+	}
+
+	@Override
+	public String toString() {
+		return "Rectangle [perimetre()=" + calculerPerimetre() + ", surface()=" + calculerSurface() + "]";
+	}
+	
+	
+
 
 }

@@ -1,12 +1,13 @@
 package fr.diginamic.formes;
 
-public abstract class Carre extends Forme{
+public class Carre extends Rectangle{
 	
-	private double longlarg;
-
-	public Carre(double longlarg) {
-		super();
-		this.longlarg = longlarg;
+	public Carre(double cote) {
+		super(cote,cote);
+	}
+	
+	public String toString() {
+		return "Carré [perimetre()=" + calculerPerimetre() + ", surface()=" + calculerSurface() + "]";
 	}
 	
 	
