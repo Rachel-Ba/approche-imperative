@@ -28,6 +28,9 @@ public class Rectangle implements ObjetGeometrique{
 	public String toString() {
 		return "Rectangle [perimetre()=" + perimetre() + ", surface()=" + surface() + "]";
 	}
+
+	
+	
 	
 	
 	
