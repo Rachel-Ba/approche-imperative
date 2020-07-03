@@ -2,6 +2,7 @@ package tri;
 import java.util.Collections;
 import java.util.ArrayList;
 import tri.Ville;
+import tri.ComparatorHabitant;
 
 public class TestVille {
 
@@ -19,16 +20,34 @@ public class TestVille {
 		list.add(new Ville("Marseille", 850700));
 		list.add(new Ville("Tharbes", 40600));
 		
-		for( Ville v : list)
-			System.out.println(v.getNom() + " " + v.getNbhabitant());
+/*		for( Ville v : list)
+			System.out.println(v.getNom() + " " + v.getNbhabitant());*/
 		
 		System.out.println();
 		System.out.println();
 		System.out.println();
 		
 		Collections.sort(list);
+/*		for( Ville v : list)
+			System.out.println(v.getNom() + " " + v.getNbhabitant());*/
+		
+		ComparatorHabitant ch = new ComparatorHabitant();
+		Collections.sort(list, ch);
+		
 		for( Ville v : list)
 			System.out.println(v.getNom() + " " + v.getNbhabitant());
+		
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		
+		ComparatorNom cn = new ComparatorNom();
+		Collections.sort(list, cn);
+		
+		for( Ville v : list)
+			System.out.println(v.getNom() + " " + v.getNbhabitant());
+		
+		list.forEach(System.out::println);
 
 	}
 	
