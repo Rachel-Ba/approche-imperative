@@ -22,11 +22,7 @@ public class TestVille {
 		
 /*		for( Ville v : list)
 			System.out.println(v.getNom() + " " + v.getNbhabitant());*/
-		
-		System.out.println();
-		System.out.println();
-		System.out.println();
-		
+
 		Collections.sort(list);
 /*		for( Ville v : list)
 			System.out.println(v.getNom() + " " + v.getNbhabitant());*/
@@ -46,8 +42,6 @@ public class TestVille {
 		
 		for( Ville v : list)
 			System.out.println(v.getNom() + " " + v.getNbhabitant());
-		
-		list.forEach(System.out::println);
 
 	}
 	

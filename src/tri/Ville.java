@@ -1,7 +1,6 @@
 package tri;
 
 
-
 public class Ville implements Comparable<Ville>
 {
 	
