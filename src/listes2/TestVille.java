@@ -47,7 +47,7 @@ public class TestVille {
 		int d = c;
 		String e = null;
 		
-		for ( Ville v : list) 
+	/*	for ( Ville v : list) 
 		{
 			if (v.getNbhabitant()<d)
 			{
@@ -55,9 +55,22 @@ public class TestVille {
 				e = v.getNom();
 			}
 			
-		}
+		}*/
 		
-		System.out.println("Ville avec le plus petit nombre d'habitant : " + e);
+		Ville villeLaMoinsPeuplee = list.get(0);
+		
+		for(int i = 0; i < list.size(); i++)
+		{
+			Ville v3 = list.get(i);
+			if (v3.getNbhabitant() < villeLaMoinsPeuplee.getNbhabitant())
+			{
+				villeLaMoinsPeuplee = v3;
+			}
+		}
+
+			
+		
+		System.out.println("Ville avec le plus petit nombre d'habitant : " + villeLaMoinsPeuplee);
 		
 
 			
