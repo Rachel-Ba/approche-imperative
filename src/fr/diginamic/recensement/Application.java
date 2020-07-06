@@ -12,7 +12,7 @@ public class Application {
 		{
 			File file = new File("C:/Users/Dell/git/approche-imperative/src/fr/diginamic/fichier/recensement population 2016.csv");
 			List<String> lignes = FileUtils.readLines(file, "UTF-8");
-			List<String> res = new ArrayList<>();
+			int popHerault = 0;
 			
 			for (String i: lignes)
 			{
@@ -29,13 +29,20 @@ public class Application {
 				int populationTotale = Integer.parseInt(population);
 				Ville ville = new Ville(codeRegion, nomRegion, codeDepartement, codeCommune, nomCommune, populationTotale);
 				
-				/*if(i.contains("Montpellier"))
+				if(ville.getNomCommune().equals("Montpellier"))
 				{
-					res.add(i);
-				}*/
-				System.out.println(ville);
+					Ville Montpellier = new Ville(codeRegion, nomRegion, codeDepartement, codeCommune, nomCommune, populationTotale);
+					System.out.println("Ville de Montpellier : " + Montpellier);
+				}
+				if(ville.getCodeDepartement().equals("34"))
+				{
+					Ville Herault = new Ville(codeRegion, nomRegion, codeDepartement, codeCommune, nomCommune, populationTotale);
+					popHerault = populationTotale+popHerault;			
+				}
+				
+				
 			}
-			
+			System.out.println("Population de tout le département de l’Hérault = " + popHerault);
 			
 			//System.out.println("Nombre de lignes :" + lignes.size());
 		} 

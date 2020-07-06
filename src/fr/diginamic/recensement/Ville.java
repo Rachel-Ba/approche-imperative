@@ -23,9 +23,9 @@ public class Ville{
 
 	@Override
 	public String toString() {
-		return "Ville [codeRegion=" + codeRegion + ", nomRegion=" + nomRegion + ", codeDepartement=" + codeDepartement
-				+ ", codeCommune=" + codeCommune + ", nomCommune=" + nomCommune + ", populationTotale="
-				+ populationTotale + "]";
+		return "Region : " + nomRegion + ", Code Region : " + codeRegion + ", Departement : " + codeDepartement
+				+ ", Commune : " + nomCommune + ", Code Commune : " + codeCommune + ", Population : "
+				+ populationTotale + "";
 	}
 
 	public String getCodeRegion() {
