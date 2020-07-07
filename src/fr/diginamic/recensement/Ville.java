@@ -1,6 +1,9 @@
 package fr.diginamic.recensement;
 
-public class Ville{
+import java.util.Comparator;
+
+public class Ville
+{
 	
 	private String codeRegion;
 	private String nomRegion;
@@ -11,7 +14,8 @@ public class Ville{
 	
 	// CONSTRUCTOR //
 	public Ville(String codeRegion, String nomRegion, String codeDepartement, String codeCommune, String nomCommune,
-			int populationTotale) {
+			int populationTotale) 
+	{
 		super();
 		this.codeRegion = codeRegion;
 		this.nomRegion = nomRegion;
@@ -22,59 +26,91 @@ public class Ville{
 	}
 
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return "Region : " + nomRegion + ", Code Region : " + codeRegion + ", Departement : " + codeDepartement
 				+ ", Commune : " + nomCommune + ", Code Commune : " + codeCommune + ", Population : "
 				+ populationTotale + "";
 	}
 
-	public String getCodeRegion() {
+	public String getCodeRegion() 
+	{
 		return codeRegion;
 	}
 
-	public void setCodeRegion(String codeRegion) {
+	public void setCodeRegion(String codeRegion) 
+	{
 		this.codeRegion = codeRegion;
 	}
 
-	public String getNomRegion() {
+	public String getNomRegion() 
+	{
 		return nomRegion;
 	}
 
-	public void setNomRegion(String nomRegion) {
+	public void setNomRegion(String nomRegion) 
+	{
 		this.nomRegion = nomRegion;
 	}
 
-	public String getCodeDepartement() {
+	public String getCodeDepartement() 
+	{
 		return codeDepartement;
 	}
 
-	public void setCodeDepartement(String codeDepartement) {
+	public void setCodeDepartement(String codeDepartement) 
+	{
 		this.codeDepartement = codeDepartement;
 	}
 
-	public String getCodeCommune() {
+	public String getCodeCommune() 
+	{
 		return codeCommune;
 	}
 
-	public void setCodeCommune(String codeCommune) {
+	public void setCodeCommune(String codeCommune) 
+	{
 		this.codeCommune = codeCommune;
 	}
 
-	public String getNomCommune() {
+	public String getNomCommune() 
+	{
 		return nomCommune;
 	}
 
-	public void setNomCommune(String nomCommune) {
+	public void setNomCommune(String nomCommune) 
+	{
 		this.nomCommune = nomCommune;
 	}
 
-	public int getPopulationTotale() {
+	public int getPopulationTotale() 
+	{
 		return populationTotale;
 	}
 
-	public void setPopulationTotale(int populationTotale) {
+	public void setPopulationTotale(int populationTotale) 
+	{
 		this.populationTotale = populationTotale;
 	}
+	
+	public int compareTo(Ville v1) 
+	{
+		if (this.populationTotale > v1.getPopulationTotale())
+		{
+			return 1;
+		}
+		if (this.populationTotale < v1.getPopulationTotale())
+		{
+			return -1;
+		}
+		return 0;
+		
+	}
+
+}
+
+
+	
 	
 	
 	
@@ -83,4 +119,3 @@ public class Ville{
 
 	
 	
-}
