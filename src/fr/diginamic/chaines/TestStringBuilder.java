@@ -29,9 +29,7 @@ public class TestStringBuilder {
         long fin2 = System.currentTimeMillis();
         System.out.println("Temps écoulé en millisecondes :" + (fin2 - debut2));
         
-        
-     // Code à chronométrer
-     
+ 
 
 	}
 
