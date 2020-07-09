@@ -52,6 +52,15 @@ public class Pays {
 	public void setPibHabitants(double pibHabitants) {
 		this.pibHabitants = pibHabitants;
 	}
+
+
+	@Override
+	public boolean equals(Object obj) 
+	{
+		return super.equals(obj);
+	}
+	
+	
 	
 	
 	
