@@ -1,4 +1,5 @@
 package sets;
+import org.apache.commons.lang3.builder.EqualsBuilder;
 
 public class Pays {
 	
@@ -54,10 +55,14 @@ public class Pays {
 	}
 
 
-	@Override
-	public boolean equals(Object obj) 
+	public boolean equals(Object object) 
 	{
-		return super.equals(obj);
+		if (!(object instanceof Pays)) 
+		{
+		return false;
+		}
+		Pays other = (Pays) object;
+		return new EqualsBuilder().append(nom, other.getNom()).isEquals();
 	}
 	
 	
