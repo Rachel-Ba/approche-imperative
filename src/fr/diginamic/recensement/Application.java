@@ -67,9 +67,9 @@ public class Application {
 				
 				
 			}
-			Collections.sort(hrlt);
+			/*Collections.sort(hrlt);*/
 			
-			System.out.println("Population de tout le département de l’Hérault = " + popHerault);
+			System.out.println("Population de tout le dï¿½partement de lï¿½Hï¿½rault = " + popHerault);
 			System.out.println("Ville avec le plus grand nombre d'habitant : " + b);
 			System.out.println("Ville avec le plus grand nombre d'habitant : " + e);
 			
